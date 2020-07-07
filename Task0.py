@@ -21,13 +21,15 @@ Print messages:
 """
 def get_first_record(record_list):
     first_record = record_list[0]
-    return print('First record of texts, {} texts {} at time {}'
-                 .format(*first_record))
+    return first_record
 
 def get_last_record(record_list):
     last_record = record_list[0]
-    return print(('Last record of calls, {} calls {} at time {}, '
-                  'lasting {} seconds').format(*last_record))
+    return last_record
 
-get_first_record(texts)
-get_last_record(calls)
+
+print('First record of texts, {} texts {} at time {}'
+      .format(*get_first_record(texts)))
+
+print('Last record of calls, {} calls {} at time {}, lasting {} seconds'
+      .format(*get_last_record(calls)))
