@@ -38,7 +38,7 @@ def get_unique_numbers(record_list):
 | Command               | Time Complexity     |
 |-------------------    |:---------------:    |
 | for loop              |       O(n)          |
-|     list.extend()     |       O(k)          |
+| &nbsp;&nbsp;&nbsp;&nbsp;list.extend()     |       O(k)          |
 | set()                 |       O(n)          |
 | len()                 |       O(1)          |
 | Worst case            |       O(nk)         |
@@ -63,7 +63,7 @@ def get_longest_call(record_list):
 |----------------    |:---------------:    |
 | for loop           |       O(n)          |
 | max()              |       O(n)          |
-|     dict.get()     |       O(n)*         |
+| &nbsp;&nbsp;&nbsp;&nbsp;dict.get()     |       O(n)*         |
 | Worst case         |      O(n^2)         |
 
 \* Could be improved by using the list instead of the dictionary to O(n)
@@ -102,9 +102,9 @@ def get_bangalore_codes(record_list):
 | Command            | Time Complexity     |
 |----------------    |:---------------:    |
 | for loop           |       O(n)          |
-|     re.match()     |      O(C^k)         |
+| &nbsp;&nbsp;&nbsp;&nbsp;re.match()     |      O(C^k)         |
 | sorted()           |   O(n*log(n))*      |
-|     set()          |       O(n)          |
+| &nbsp;&nbsp;&nbsp;&nbsp;set()          |       O(n)          |
 | Worst Total        |     O(n*C^k)        |
 
 - n - number of items in the record_list
@@ -138,7 +138,7 @@ def get_bangalore_call_ratio(record_list):
 | Command                 | Time Complexity     |
 |---------------------    |:---------------:    |
 | for loop                |       O(n)          |
-|     str.startwith()     |       O(k)          |
+| &nbsp;&nbsp;&nbsp;&nbsp;str.startwith()     |       O(k)          |
 | Worst Total             |      O(n*k)         |
 
 ## Task 4
@@ -166,9 +166,9 @@ def get_telemarketers(record_list):
 | Command              | Time Complexity     |
 |------------------    |:---------------:    |
 | for loop             |       O(n)          |
-|     len()            |       O(1)          |
-|     extend()         |       O(2)          |
-|     append()         |       O(1)          |
+| &nbsp;&nbsp;&nbsp;&nbsp;len()            |       O(1)          |
+| &nbsp;&nbsp;&nbsp;&nbsp;extend()         |       O(2)          |
+| &nbsp;&nbsp;&nbsp;&nbsp;append()         |       O(1)          |
 | set()                |       O(n)          |
 | set.union()          |    O(k1 + k2)       |
 | set.difference()     |       O(k)          |
